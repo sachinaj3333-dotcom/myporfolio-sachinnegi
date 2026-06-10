@@ -1,0 +1,138 @@
+.heading {
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info_card {
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.visit_card {
+    background-color: #FFFFFF;
+    padding-top: 1.5rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    /* border: 2px solid rgba(128, 128, 128, 0.078); */
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.web_dev_icon {
+    font-size: xx-large;
+    background: linear-gradient(135deg,
+            #D3D5FD 0%,
+            #E7E4FE 35%,
+            #D3D4FD 70%,
+            #E7E4FE 100%);
+    backdrop-filter: blur(12px) ;
+    color: #5F34FC;
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    border-radius: 15px;
+}
+
+.web_dev_heading {
+    font-size: smaller;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.web_dev_description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-small;
+    font-weight: 500;
+    color: rgb(77, 75, 75);
+}
+
+.back_dev_icon {
+    font-size: xx-large;
+    background: linear-gradient(135deg,
+            #D2F4E7 0%,
+            #E4FAF1 35%,
+            #D2F4E7 70%,
+            #E4FAF1 100%);
+    backdrop-filter: blur(12px);
+    color: #29C2A5;
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    border-radius: 100%;
+}
+
+.back_dev_heading {
+    font-size: smaller;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.back_dev_description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-small;
+    font-weight: 500;
+    color: rgb(77, 75, 75);
+}
+
+
+.puzzle_icon {
+    font-size: xx-large;
+    background: linear-gradient(135deg,
+            #FDE3CB 0%,
+            #FEE7D3 35%,
+            #FDE3CB 70%,
+            #FEE7D3 100%);
+    backdrop-filter: blur(12px);
+    color: #FD940B;
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    border-radius: 15px;
+}
+
+.puzzle_heading {
+    font-size: smaller;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.puzzle_description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-small;
+    font-weight: 500;
+    color: rgb(77, 75, 75);
+}
+
+
+.continuous_icon {
+    font-size: xx-large;
+    background: linear-gradient(135deg,
+            #F6DAEC 0%,
+            #FCECF4 35%,
+            #F6DAEC 70%,
+            #FCECF4 100%);
+    backdrop-filter: blur(12px);
+    color: #D3328D;
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    border-radius: 100%;
+}
+
+.continuous_heading {
+    font-size: smaller;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.continuous_description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-small;
+    font-weight: 500;
+    color: rgb(77, 75, 75);
+}
+
