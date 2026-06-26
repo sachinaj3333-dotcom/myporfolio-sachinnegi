@@ -31,11 +31,11 @@ const Navbar = () => {
                             <li className={`nav-item ${Styles.nav_options}`}>
                                 <Link className= {`nav-link ${Styles.nav_items}`} to ={"#"}>Contact</Link>
                             </li>
-                            
+                            <Link to={"#"} className='me-5 d-md-none'><button className={`btn ${Styles.connect_btn}`}><i className="bi bi-send me-2"></i>Let's Connect</button></Link>
                         </ul>
                         
                     </div>
-                    <Link to={"#"} className='me-5'><button className={`btn ${Styles.connect_btn}`}><i className="bi bi-send me-2"></i>Let's Connect</button></Link>
+                    <Link to={"#"} className='me-5 d-none d-md-block'><button className={`btn ${Styles.connect_btn}`}><i className="bi bi-send me-2"></i>Let's Connect</button></Link>
                 </div>
             </nav>
         </>

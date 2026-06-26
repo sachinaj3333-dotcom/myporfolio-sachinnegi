@@ -13,6 +13,7 @@
 .nav_options:hover > .nav_items {
     color: #3E18CF !important;
 }
+/* <section style={{ backgroundColor: "black", position: "relative", overflow: "hidden", minHeight: "70vh" }}> */
 
 .connect_btn {
     color: white !important;
@@ -35,4 +36,35 @@
 
 .nav_ul {
     margin-left: 30% !important;
+}
+
+@media screen and (max-width: 1262px) {
+    .nav_ul {
+        margin-left: 25% !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .nav_ul {
+        margin-left: 20% !important;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .nav_ul {
+        margin-left: 15% !important;
+    }
+}
+@media screen and (max-width: 1101px) {
+    .nav_ul {
+        margin-left: 10% !important;
+    }
+}
+@media screen and (max-width: 1056px) {
+    .nav_ul {
+        margin-left: 5% !important;
+    }
+}
+@media screen and (max-width: 1014px) {
+    .nav_ul {
+        margin-left: 2% !important;
+    }
 }
