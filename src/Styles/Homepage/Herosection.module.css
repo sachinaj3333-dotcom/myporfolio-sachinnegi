@@ -4,12 +4,7 @@
     font-size: large;
 }
 
-.name {
-    font-size: x-large;
-    color: #5152FC;
-    font-family: cursive;
-    font-weight: 600;
-}
+
 
 .hero_intro_second {
     font-size: 50px;
@@ -112,6 +107,7 @@
 
 .heroimage {
     height: 100%;
+    width: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -123,7 +119,7 @@
 
 @media screen and (max-width: 768px) {
     .heroimage {
-        height: 40%;
+        height: 55%;
         margin-top: 6rem;
     }
 }
@@ -164,4 +160,13 @@
     color: white;
     font-size: small;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    .info_count{
+        padding-left: 15%;
+    }
+    .info_detail {
+        padding-left: 15%;
+    }
 }

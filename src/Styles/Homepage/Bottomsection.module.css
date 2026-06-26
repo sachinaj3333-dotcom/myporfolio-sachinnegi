@@ -1,0 +1,112 @@
+.skillcard {
+    border: none  !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px ;
+    height: 130px !important;
+    border-radius: 15px !important;
+}
+
+.titleicon {
+    color: #5F34FC;
+}
+
+.title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.skillicon {
+    /* margin-right: 2rem; */
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px ;
+    height: 65px;
+}
+
+@media screen and (max-width: 1400px) {
+    .skillicon{
+        height: 55px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .skillicon{
+        height: 45px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .skillicon{
+        height: 65px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .skillicon{
+        height: 40px;
+    }
+}
+@media screen and (max-width: 504px) {
+    .skillicon{
+        height: 30px;
+    }
+}
+@media screen and (max-width: 434px) {
+    .skillicon{
+        height: 25px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .skillicon{
+        height: 21px;
+    }
+}
+
+.quotation {
+    color: #5F34FC;
+}
+
+.quote {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.namesign{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.footer {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px ;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.footer_rights {
+    font-size: x-small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.footer_heart {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-weight: 400;
+    /* margin-left: 20%; */
+}
+
+/* @media screen and (max-width: 400px) {
+    .footer_rights{
+        font-size: xx-small;
+    }
+} */
+
+.arrowup{
+    background-color: #313DFA;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+    border-radius: 100%;
+    color: white;
+}
+
+.arrowupparent{
+    cursor: pointer;
+}

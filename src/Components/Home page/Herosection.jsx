@@ -3,15 +3,16 @@ import Styles from "../../Styles/Homepage/Herosection.module.css";
 import { Link } from 'react-router';
 import heroimage from "../../assets/herosectionimage.png";
 import GlareHover from "../../Reactbit/glare/GlareHover.jsx";
+import sign from "../../assets/sachinsign.png";
 
 const HeroSection = () => {
     return (
         <>
-            <section style={{ backgroundColor: "#F5F5FE" }}>
+            <section style={{ backgroundColor: "#F5F5FE" }} id='herosection'>
                 <div className="container pt-5">
                     <div className="row">
-                        <div className="col-lg-5 col-sm-12">
-                            <p className={`${Styles.hero_intro} mb-0`}>Hi, i'm <span className={`${Styles.name}`}>Sachin</span></p>
+                        <div className="col-lg-5 col-md-6 col-sm-12">
+                            <p className={`${Styles.hero_intro} mb-0`}>Hi, i'm <img src={sign} alt="signature" height={40} className='ms-2'/></p>
                             <p className={`${Styles.hero_intro_second} mb-0`}>IT Professional</p>
                             <p className={`${Styles.hero_intro_third} mb-0`}>Who Builds</p>
                             <p className={`${Styles.hero_intro_fourth}`}><span className={`${Styles.designed_intro}`}>Digital </span>Solutions<span style={{ color: '#8025F1' }}>.</span></p>
@@ -20,7 +21,7 @@ const HeroSection = () => {
                             <Link to={"#"}><button className={`${Styles.download_cv_btn} mt-2`}>Download CV <i className="bi bi-download ms-1"></i></button></Link>
                             <p className='mt-4'><span className={`${Styles.find_me}`}>Find me on</span> <Link to={"#"} className={`text-black  ms-4`}><span className={`${Styles.social_icons}`}><i className="bi bi-linkedin"></i></span></Link><Link to={"#"} className='text-black ms-3'><span className={`${Styles.social_icons} `}><i className="bi bi-github"></i></span></Link><Link to={"#"} className='text-black ms-3'><span className={`${Styles.social_icons}`}><i className="bi bi-threads"></i></span></Link><Link to={"#"} className='ms-3 text-black'><span className={`${Styles.social_icons}`}><i className="bi bi-envelope-at-fill"></i></span></Link> </p>
                         </div>
-                        <div className="col-lg-7 col-sm-12 overflow-hidden p-0" style={{ height: "70vh" }}>
+                        <div className="col-lg-7 col-md-6 col-sm-12 overflow-hidden p-0" style={{ height: "70vh" }}>
                             <img src={heroimage} alt="image" className={`${Styles.heroimage}`} />
                         </div>
                     </div>
@@ -43,45 +44,45 @@ const HeroSection = () => {
                     >
 
                         <div className="row p-3">
-                            <div className="col-3" style={{ borderRight: "1px solid #3923e24e" }}>
+                            <div className="col-lg-3 col-md-3 col-sm-12" style={{ borderRight: "1px solid #3923e24e" }}>
                                 <div className="row">
-                                    <div className="col-3 text-center align-content-center">
+                                    <div className="col-lg-3 col-md-3 col-sm-2 col-2 mb-3  text-center align-content-center">
                                         <span className={`${Styles.project_icon}`}><i className="bi bi-code-square"></i></span>
                                     </div>
-                                    <div className="col-9">
+                                    <div className="col-lg-9 col-md-9 col-sm-10 col-10 mb-3">
                                         <p className={`mb-0 ${Styles.info_count}`}>5+</p>
                                         <p className={`${Styles.info_detail}`}>Projects Completed</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-3" style={{ borderRight: "1px solid #3923e24e" }}>
+                            <div className="col-lg-3 col-md-3 col-sm-12" style={{ borderRight: "1px solid #3923e24e" }}>
                                 <div className="row">
-                                    <div className="col-3 text-center align-content-center">
+                                    <div className="col-lg-3 col-md-3 col-sm-2 col-2 mb-3  text-center align-content-center">
                                         <span className={`${Styles.project_icon}`}><i className="bi bi-stack"></i></span>
                                     </div>
-                                    <div className="col-9">
+                                    <div className="col-lg-9 col-md-9 col-sm-10 col-10 mb-3">
                                         <p className={`mb-0 ${Styles.info_count}`}>14+</p>
                                         <p className={`${Styles.info_detail}`}>Technologies</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-3" style={{ borderRight: "1px solid #3923e24e" }}>
+                            <div className="col-lg-3 col-md-3 col-sm-12" style={{ borderRight: "1px solid #3923e24e" }}>
                                 <div className="row">
-                                    <div className="col-3 text-center align-content-center">
+                                    <div className="col-lg-3 col-md-3 col-sm-2 col-2 mb-3  text-center align-content-center">
                                         <span className={`${Styles.project_icon}`}><i className="bi bi-lightbulb"></i></span>
                                     </div>
-                                    <div className="col-9">
+                                    <div className="col-lg-9 col-md-9 col-sm-10 col-10 mb-3">
                                         <p className={`mb-0 ${Styles.info_count}`}>1+</p>
                                         <p className={`${Styles.info_detail}`}>Year Learning</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-3">
+                            <div className="col-lg-3 col-md-3 col-sm-12">
                                 <div className="row">
-                                    <div className="col-3 text-center align-content-center">
+                                    <div className="col-lg-3 col-md-3 col-sm-2 col-2 mb-3  text-center align-content-center">
                                         <span className={`${Styles.project_icon}`}><i className="bi bi-rocket-takeoff"></i></span>
                                     </div>
-                                    <div className="col-9">
+                                    <div className="col-lg-9 col-md-9 col-sm-10 col-10 mb-3">
                                         <p className={`mb-0 ${Styles.info_count}`}>Always</p>
                                         <p className={`${Styles.info_detail}`}>Learning New Things</p>
                                     </div>
