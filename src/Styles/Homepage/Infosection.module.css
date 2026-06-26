@@ -240,6 +240,7 @@
 .introicon {
     color: #5F34FC;
     -webkit-text-stroke-width: 0.6px;
+    display: inline-flex;
 }
 
 .introdescription {
