@@ -1,25 +1,35 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Styles from "../../Styles/Homepage/Herosection.module.css";
 import { Link } from 'react-router';
 import heroimage from "../../assets/herosectionimage.png";
 import GlareHover from "../../Reactbit/glare/GlareHover.jsx";
 import sign from "../../assets/sachinsign.png";
+import Aos from 'aos';
 
 const HeroSection = () => {
+
+    useEffect(() => {
+            Aos.init({
+                duration: 1100,
+                once: true,
+            });
+        }, []);
+
+
     return (
         <>
             <section style={{ backgroundColor: "#F5F5FE" }} id='herosection'>
                 <div className="container pt-5">
                     <div className="row">
                         <div className="col-lg-5 col-md-6 col-sm-12">
-                            <p className={`${Styles.hero_intro} mb-0`}>Hi, i'm <img src={sign} alt="signature" height={40} className='ms-2'/></p>
-                            <p className={`${Styles.hero_intro_second} mb-0`}>IT Professional</p>
-                            <p className={`${Styles.hero_intro_third} mb-0`}>Who Builds</p>
-                            <p className={`${Styles.hero_intro_fourth}`}><span className={`${Styles.designed_intro}`}>Digital </span>Solutions<span style={{ color: '#8025F1' }}>.</span></p>
-                            <p className={`${Styles.intro_description} mb-4`}>Passionate about building modern, responsive and <br /> user-friendly web applications.</p>
-                            <Link to={"#"}><button className={`${Styles.view_project_btn} me-3`}>View My Work <i className={`bi bi-arrow-right ms-1 ${Styles.arrow_icon}`}></i></button></Link>
-                            <Link to={"#"}><button className={`${Styles.download_cv_btn} mt-2`}>Download CV <i className="bi bi-download ms-1"></i></button></Link>
-                            <p className='mt-4'><span className={`${Styles.find_me}`}>Find me on</span> <Link to={"#"} className={`text-black  ms-4`}><span className={`${Styles.social_icons}`}><i className="bi bi-linkedin"></i></span></Link><Link to={"#"} className='text-black ms-3'><span className={`${Styles.social_icons} `}><i className="bi bi-github"></i></span></Link><Link to={"#"} className='text-black ms-3'><span className={`${Styles.social_icons}`}><i className="bi bi-threads"></i></span></Link><Link to={"#"} className='ms-3 text-black'><span className={`${Styles.social_icons}`}><i className="bi bi-envelope-at-fill"></i></span></Link> </p>
+                            <p className={`${Styles.hero_intro} mb-0`}>Hi, i'm <img src={sign} alt="signature" data-aos="flip-left" height={40} className='ms-2' /></p>
+                            <p className={`${Styles.hero_intro_second} mb-0`} data-aos="fade-right">IT Professional</p>
+                            <p className={`${Styles.hero_intro_third} mb-0`} data-aos="fade-left">Who Builds</p>
+                            <p className={`${Styles.hero_intro_fourth}`} data-aos="fade-right"><span className={`${Styles.designed_intro}`}>Digital </span>Solutions<span style={{ color: '#8025F1' }}>.</span></p>
+                            <p className={`${Styles.intro_description} mb-4`} data-aos="fade-left">Passionate about building modern, responsive and <br /> user-friendly web applications.</p>
+                            <Link to={"#"} ><button data-aos="fade-right" className={`${Styles.view_project_btn} me-3`}>View My Work <i className={`bi bi-arrow-right ms-1 ${Styles.arrow_icon}`}></i></button></Link>
+                            <Link to={"#"}><button data-aos="fade-left" className={`${Styles.download_cv_btn} mt-2`}>Download CV <i className="bi bi-download ms-1"></i></button></Link>
+                            <div className='mt-4  mb-2 d-flex align-items-center'><span className={`${Styles.find_me}`}>Find me on</span><Link to={"#"} data-aos="flip-left" className={`text-black  ms-4`}><span className={`${Styles.social_icons}`}><i className="bi bi-linkedin"></i></span></Link><Link to={"#"} data-aos="flip-left" className='text-black ms-3' ><span className={`${Styles.social_icons} `}><i className="bi bi-github"></i></span></Link><Link to={"#"} data-aos="flip-left" className='text-black ms-3' ><span className={`${Styles.social_icons}`}><i className="bi bi-threads"></i></span></Link><Link data-aos="flip-left" to={"#"} className='ms-3 text-black' ><span className={`${Styles.social_icons}`}><i className="bi bi-envelope-at-fill"></i></span></Link> </div>
                         </div>
                         <div className="col-lg-7 col-md-6 col-sm-12 overflow-hidden p-0" style={{ height: "70vh" }}>
                             <img src={heroimage} alt="image" className={`${Styles.heroimage}`} />
@@ -32,7 +42,7 @@ const HeroSection = () => {
 
                 {/* <div style={{height: "600px", position: "relative"}}> */}
 
-                <div className={`container ${Styles.info_card}`} style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 20px 25px -5px, rgba(0, 0, 0, 0.55) 0px 10px 10px -5px" }}>
+                <div className={`container ${Styles.info_card}`} data-aos="flip-up" style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 20px 25px -5px, rgba(0, 0, 0, 0.55) 0px 10px 10px -5px" }}>
 
                     <GlareHover
                         glareColor='#ffffff'

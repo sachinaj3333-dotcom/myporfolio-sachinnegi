@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Styles from "../../Styles/Homepage/Infosection.module.css";
 import { Link } from 'react-router';
 import snapbug from "../../assets/homepage/projectone.png";
 import foodstation from "../../assets/homepage/projecttwo.png";
 import pixelcart from "../../assets/homepage/projectthree.png";
 import me from "../../assets/homepage/me.png";
+import Aos from 'aos';
 
 const Infosection = () => {
+
+    useEffect(() => {
+            Aos.init({
+                duration: 1100,
+                once: true,
+            });
+        }, []);
+
     return (
         <>
             <section style={{ backgroundColor: "#F5F5FE" }}>
@@ -18,7 +27,7 @@ const Infosection = () => {
                                 <div className="row">
                                     <div className="col-lg-3 col-6 mb-2">
 
-                                        <div className={`${Styles.visit_card}`}>
+                                        <div className={`${Styles.visit_card}`} data-aos="flip-left">
                                             <p>
                                                 <span className={`${Styles.web_dev_icon}`}><i className="bi bi-code-slash"></i></span>
                                             </p>
@@ -27,7 +36,7 @@ const Infosection = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-3 col-6">
-                                        <div className={`${Styles.visit_card}`}>
+                                        <div className={`${Styles.visit_card}`} data-aos="flip-left">
                                             <p>
                                                 <span className={`${Styles.back_dev_icon}`}><i className="bi bi-database"></i></span>
                                             </p>
@@ -36,7 +45,7 @@ const Infosection = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-3 col-6">
-                                        <div className={`${Styles.visit_card}`}>
+                                        <div className={`${Styles.visit_card}`} data-aos="flip-left">
                                             <p>
                                                 <span className={`${Styles.puzzle_icon}`}><i className="bi bi-puzzle-fill"></i></span>
                                             </p>
@@ -45,7 +54,7 @@ const Infosection = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-3 col-6">
-                                        <div className={`${Styles.visit_card}`}>
+                                        <div className={`${Styles.visit_card}`} data-aos="flip-left">
                                             <p>
                                                 <span className={`${Styles.continuous_icon}`}><i className="bi bi-rocket-takeoff-fill"></i></span>
                                             </p>
@@ -60,7 +69,7 @@ const Infosection = () => {
                                 </div>
                                 <div className="row mt-4 d-flex justify-content-center">
                                     <div className="col-lg-4 col-12 col-md-8 col-sm-10 mb-2">
-                                        <div className={`card ${Styles.projectcard} `}>
+                                        <div className={`card ${Styles.projectcard} `} data-aos="flip-right">
                                             <img src={snapbug} alt="image" width={"100%"} style={{ borderRadius: "10px" }} height={150} />
                                             <Link to={"#"}>
                                                 <span className={`${Styles.linkicon}`}><i className="bi bi-box-arrow-up-right"></i></span>
@@ -73,7 +82,7 @@ const Infosection = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-4 col-12 col-md-8 col-sm-10 mb-2">
-                                        <div className={`card ${Styles.projectcard} `}>
+                                        <div className={`card ${Styles.projectcard} `} data-aos="flip-right">
                                             <img src={foodstation} alt="image" width={"100%"} style={{ borderRadius: "10px" }} height={150} />
                                             <Link to={"#"}>
                                                 <span className={`${Styles.linkicon}`}><i className="bi bi-box-arrow-up-right"></i></span>
@@ -86,7 +95,7 @@ const Infosection = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-4 col-12 col-md-8 col-sm-10">
-                                        <div className={`card ${Styles.projectcard} `}>
+                                        <div className={`card ${Styles.projectcard} `} data-aos="flip-right">
                                             <img src={pixelcart} alt="image" width={"100%"} style={{ borderRadius: "10px" }} height={150} />
                                             <Link to={"#"}>
                                                 <span className={`${Styles.linkicon}`}><i className="bi bi-box-arrow-up-right"></i></span>
@@ -106,14 +115,14 @@ const Infosection = () => {
                             <div className={`card ${Styles.aboutmecard} px-5 pt-5 pb-5`}>
                                 <p className={`${Styles.aboutme}`}><span className={`${Styles.icon} me-3`}><i className="bi bi-person"></i></span>About Me</p>
                                 <div className='text-center mt-2 mb-2'>
-                                    <img src={me} alt="image" className={`${Styles.myimage}`} />
+                                    <img src={me} data-aos="flip-left" alt="image" className={`${Styles.myimage}`} />
                                 </div>
                                 <p className={`${Styles.currentinfo} mt-4`}>BCA (Fresher)</p>
                                 <p className={`${Styles.intro} text-muted mb-4`}>I'm an enthusiastic learner with a passion for coding and creating meaningful digital experiences.</p>
-                                <p className={`${Styles.introdescription} mb-4`}><span className={`${Styles.introicon} me-2`}><i className="bi bi-geo-alt"></i></span>India</p>
-                                <p className={`${Styles.introdescription} mb-4`}><span className={`${Styles.introicon} me-2`}><i className="bi bi-envelope"></i></span>sachinaj3333@gmail.com</p>
-                                <p className={`${Styles.introdescription} mb-4`}><span className={`${Styles.introicon} me-2`}><i className="bi bi-telephone"></i></span>+91 9012016124</p>
-                                <button className={`${Styles.connectbtn} btn mt-3`}>Let's Connect <span><i className="bi bi-arrow-right"></i></span></button>
+                                <p className={`${Styles.introdescription} mb-4`}><span className={`${Styles.introicon} me-2`}><i className="bi bi-geo-alt" data-aos="fade-right" ></i></span><span data-aos="fade-left" className='d-inline-flex'>India</span></p>
+                                <p className={`${Styles.introdescription} mb-4`}><span className={`${Styles.introicon} me-2`}><i className="bi bi-envelope" data-aos="fade-right"></i></span><span className="d-inline-flex" data-aos="fade-left">sachinaj3333@gmail.com</span></p>
+                                <p className={`${Styles.introdescription} mb-4`}><span className={`${Styles.introicon} me-2`}><i className="bi bi-telephone" data-aos="fade-right"></i></span><span className="d-inline-flex" data-aos="fade-left">+91 9012016124</span></p>
+                                <button className={`${Styles.connectbtn} btn mt-3`} data-aos="flip-up">Let's Connect <span><i className="bi bi-arrow-right"></i></span></button>
                             </div>
                         </div>
                     </div>
