@@ -55,7 +55,7 @@ const Bottomsection = () => {
                             </div>
                         </div>
                     </div>
-                    <div style={{ backgroundColor: "#FAFAFE" }} className={`${Styles.footer} mt-3 pt-2 px-3 pb-4`} data-aos="fade-up">
+                    <div style={{ backgroundColor: "#FAFAFE" }} className={`${Styles.footer} mt-3 pt-2 px-3 pb-4`} >
                         <div className="row">
                             <div className="col-1" >
                                 <span className={`${Styles.namesign}`}>SN</span><span style={{ color: "#5932EE", fontWeight: "500", fontSize: "larger" }}>.</span>
