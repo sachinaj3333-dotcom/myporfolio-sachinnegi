@@ -21,7 +21,7 @@ const HeroSection = () => {
             <section style={{ backgroundColor: "#F5F5FE" }} id='herosection'>
                 <div className="container pt-5">
                     <div className="row">
-                        <div className="col-lg-5 col-md-6 col-sm-12">
+                        <div className="col-lg-5 col-md-6 col-sm-12 col-12">
                             <p className={`${Styles.hero_intro} mb-0`}>Hi, i'm <img src={sign} alt="signature" data-aos="flip-left" height={40} className='ms-2' /></p>
                             <p className={`${Styles.hero_intro_second} mb-0`} data-aos="fade-right">IT Professional</p>
                             <p className={`${Styles.hero_intro_third} mb-0`} data-aos="fade-left">Who Builds</p>
@@ -31,8 +31,8 @@ const HeroSection = () => {
                             <Link to={"#"}><button data-aos="fade-left" className={`${Styles.download_cv_btn} mt-2`}>Download CV <i className="bi bi-download ms-1"></i></button></Link>
                             <div className='mt-4  mb-2 d-flex align-items-center'><span className={`${Styles.find_me}`}>Find me on</span><Link to={"#"} data-aos="flip-left" className={`text-black  ms-4`}><span className={`${Styles.social_icons}`}><i className="bi bi-linkedin"></i></span></Link><Link to={"#"} data-aos="flip-left" className='text-black ms-3' ><span className={`${Styles.social_icons} `}><i className="bi bi-github"></i></span></Link><Link to={"#"} data-aos="flip-left" className='text-black ms-3' ><span className={`${Styles.social_icons}`}><i className="bi bi-threads"></i></span></Link><Link data-aos="flip-left" to={"#"} className='ms-3 text-black' ><span className={`${Styles.social_icons}`}><i className="bi bi-envelope-at-fill"></i></span></Link> </div>
                         </div>
-                        <div className="col-lg-7 col-md-6 col-sm-12 overflow-hidden p-0" style={{ height: "70vh" }}>
-                            <img src={heroimage} alt="image" className={`${Styles.heroimage}`} />
+                        <div className="col-lg-7 col-md-6 col-sm-12 col-12 overflow-hidden p-0" style={{ height: "70vh" }}>
+                            <img src={heroimage} alt="image" className={`${Styles.heroimage}`} data-aos="zoom-in" />
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ const HeroSection = () => {
                                         <span className={`${Styles.project_icon}`}><i className="bi bi-code-square"></i></span>
                                     </div>
                                     <div className="col-lg-9 col-md-9 col-sm-10 col-10 mb-3">
-                                        <p className={`mb-0 ${Styles.info_count}`}>5+</p>
+                                        <p className={`mb-0 ${Styles.info_count}`}>3+</p>
                                         <p className={`${Styles.info_detail}`}>Projects Completed</p>
                                     </div>
                                 </div>

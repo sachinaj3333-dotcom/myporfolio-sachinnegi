@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg sticky-top top-0" style={{ backgroundColor: "#F9F9FE", borderBottom: "1px solid #e2e6f7", boxShadow: "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px" }}>
+            <nav className="navbar navbar-expand-lg sticky-top top-0" style={{ backgroundColor: "#F9F9FE", borderBottom: "1px solid #e2e6f7", boxShadow: "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px", zIndex: "9999" }}>
                 <div className="container-fluid">
                     <Link className={`navbar-brand ${Styles.nav_brand} ms-5`} data-aos="fade-right" data-aos-offset="500" data-aos-duration="1000" data-aos-anchor="#example-anchor" to={"#"}>SN<span style={{ color: "#5932EE" }}>.</span></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,15 +24,15 @@ const Navbar = () => {
                         <ul className={`navbar-nav me-auto mb-2 mb-lg-0 ${Styles.nav_ul}`}>
                             <li className={`nav-item me-5 ${Styles.nav_options}`} data-aos="fade-up"
                                 data-aos-anchor-placement="top-bottom">
-                                <Link className={`nav-link ${Styles.nav_items}`} aria-current="page" to={"#"}>Home</Link>
+                                <Link className={`nav-link ${Styles.nav_items}`} aria-current="page" to={"/"}>Home</Link>
                             </li>
                             <li className={`nav-item me-5 ${Styles.nav_options}`} data-aos="fade-up"
                                 data-aos-anchor-placement="top-bottom">
-                                <Link className={`nav-link ${Styles.nav_items}`} to={"#"}>About</Link>
+                                <Link className={`nav-link ${Styles.nav_items}`} to={"/about"}>About</Link>
                             </li>
                             <li className={`nav-item me-5 ${Styles.nav_options}`} data-aos="fade-up"
                                 data-aos-anchor-placement="top-bottom">
-                                <Link className={`nav-link ${Styles.nav_items}`} to={"#"}>Projects</Link>
+                                <Link className={`nav-link ${Styles.nav_items}`} to={"#"}>Skills</Link>
                             </li>
                             <li className={`nav-item me-5 ${Styles.nav_options}`} data-aos="fade-up"
                                 data-aos-anchor-placement="top-bottom">
@@ -40,7 +40,7 @@ const Navbar = () => {
                             </li>
                             <li className={`nav-item me-5 ${Styles.nav_options}`} data-aos="fade-up"
                                 data-aos-anchor-placement="top-bottom">
-                                <Link className={`nav-link ${Styles.nav_items}`} to={"#"}>Skills</Link>
+                                <Link className={`nav-link ${Styles.nav_items}`} to={"#"}>Projects</Link>
                             </li>
                             <li className={`nav-item ${Styles.nav_options}`} data-aos="fade-up"
                                 data-aos-anchor-placement="top-bottom">
